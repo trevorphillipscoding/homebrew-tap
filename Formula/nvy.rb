@@ -5,21 +5,21 @@
 class Nvy < Formula
   desc "A minimalist, plugin-driven runtime version manager"
   homepage "https://github.com/trevorphillipscoding/nvy"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/trevorphillipscoding/nvy/releases/download/v1.3.0/nvy_1.3.0_macOS_x86_64.tar.gz"
-      sha256 "64305f810b2905e0fa83f01fc659cddcae18fdcc292daab857d9387e5f1d7488"
+      url "https://github.com/trevorphillipscoding/nvy/releases/download/v1.4.0/nvy_1.4.0_macOS_x86_64.tar.gz"
+      sha256 "e0d6ccc892e154c8b6eecc873794b0be6048a966088d6aa6e278a1ba976f7db7"
 
       define_method(:install) do
         bin.install "nvy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/trevorphillipscoding/nvy/releases/download/v1.3.0/nvy_1.3.0_macOS_arm64.tar.gz"
-      sha256 "c34e34ad20ca4bd5e2b3bc2db63e42372e5f47eb988d59fb13224e47f857e859"
+      url "https://github.com/trevorphillipscoding/nvy/releases/download/v1.4.0/nvy_1.4.0_macOS_arm64.tar.gz"
+      sha256 "434d0c2958058e6a99d0ecddf4407518d290ed92984e34ed866b02416a16fc30"
 
       define_method(:install) do
         bin.install "nvy"
@@ -29,15 +29,15 @@ class Nvy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trevorphillipscoding/nvy/releases/download/v1.3.0/nvy_1.3.0_linux_x86_64.tar.gz"
-      sha256 "1c861a3cafffc0e1cd65e6299bf3bfb4e3bbfdcab787c3caf1c3c3b375425ecb"
+      url "https://github.com/trevorphillipscoding/nvy/releases/download/v1.4.0/nvy_1.4.0_linux_x86_64.tar.gz"
+      sha256 "168d5f8ccdb17b2453cdcb9ef757361322e18ee51799d1c9a942da98498a6a99"
       define_method(:install) do
         bin.install "nvy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trevorphillipscoding/nvy/releases/download/v1.3.0/nvy_1.3.0_linux_arm64.tar.gz"
-      sha256 "cc723700bc732940a1f033de7a6bdaff1bd9893aff3b3d2ab6d8a64cd676123c"
+      url "https://github.com/trevorphillipscoding/nvy/releases/download/v1.4.0/nvy_1.4.0_linux_arm64.tar.gz"
+      sha256 "ff98ea3fc5280dfb5f5d7ecb2388759c0ef4f258edfec45bd14ac6da49b98890"
       define_method(:install) do
         bin.install "nvy"
       end
